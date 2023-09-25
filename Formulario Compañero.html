@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ludueña</title>
+</head>
+<body>
+    
+    <form action="index.php" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Carnet de conducir</legend> <br>
+
+        <label for="dni"> Foto del DNI: </label>
+        <input type="file" name="dni" id="dni"> <br>
+        <label for="nom">Nombre: </label>
+        <input type="text" name="nombre" id="nom"> <br> <br>
+        <label for="ape">Apellido: </label>
+        <input type="text" name="apellido" id="ape"> <br> <br>
+        <label for="DNI">DNI: </label>
+        <input type="text" name="dni" id="DNI"> <br> <br>
+        <label for="gmail">Gmail: </label>
+        <input type="email" name="correo" id="gmail"> <br> <br>
+        <label for="pass">Contraseña: </label>
+        <input type="password" name="contra" id="pass"> <br> <br>
+        <label>¿Tiene usted experiencia previa manejando?</label> <br>
+            <label for="si">si</label>
+            <input type="radio" name="opcion" id="si" value="si" checked>
+            <label for="no">no</label>
+            <input type="radio" name="opcion" value="no" id="no">
+            <label for="poco">un poco</label>
+            <input type="radio" name="opcion" value="poco" id="poco"> <br> <br>
+        <label for="argumento">Escriba para que quiere usted la licencia de conducir:</label> <br>
+        <textarea name="razon" id="argumento" cols="30" rows="10"></textarea> <br> <br>
+        <label for="prov">Provincia</label>
+        <select name="provincia" id="prov">
+            <option>Seleccione</option>
+            <option value="nqn">Neuquén</option>
+            <option value="ju">Jujuy</option>
+            <option value="ch">Chaco</option>
+            <option value="fe">Santa fe</option>
+            <option value="me">Mendoza</option>
+            <option value="co">Cordoba</option>
+        </select> <br> <br>
+        <label>Que dia/s usted podria pasar a hacer las pruebas:</label> <br>
+        <label for="lu">Lunes</label>
+            <input type="checkbox" name="lunes" value="si" id="lu"> <br>
+        <label for="mi">Miercoles</label>
+            <input type="checkbox" name="miercoles" value="si" id="mi"> <br>
+        <label for="vi">Viernes </label>
+            <input type="checkbox" name="viernes" value="si" id="vi"> <br>
+        <label for="sa">Sabado</label>
+            <input type="checkbox" name="sabado" value="si" id="sa"> <br>
+    </fieldset>
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="reset" name="borrar" value="Borrar">
+    </form>
+
+
+</body>
+</html>
